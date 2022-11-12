@@ -1,0 +1,123 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+ header{
+    height: 30%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    flex-basis: 30%;
+    margin-left: 10%;
+}
+.nav{
+    flex-basis: 40%;
+}
+.un-list{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ .un-list a{
+    text-decoration: none;
+    color: darkslategrey;
+    position: relative;
+    margin-left: 30px;
+    padding-bottom: 5px;
+    font-style: italic;
+
+ }
+.un-list li a::after{
+    content: '';
+    position: absolute;
+    bottom:0;
+    right: 50%;
+    width: 0;
+    height:3px;
+    background: rgb(108, 108, 239);
+    transition: width 1s ease-in-out;
+   
+}
+.un-list li a::before{
+    content: '';
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    width: 0;
+    height:3px;
+    background: rgb(108, 108, 239);
+    transition: width 1s ease-in-out;
+   
+}
+li a:hover{
+    color: lightgreen;
+}
+li a:hover::after{
+    width: 70%;
+}
+li a:hover::before{
+    width: 70%;
+}
+.panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.content-left{
+   flex-basis: 30%;
+}
+.web{
+    max-width: 670px;
+    height: auto
+}
+
+.panel h1{
+    font-size: 54px;
+    color: #133B4f;
+}
+.panel h2{
+    font-size: 32px;
+    font-weight: 400;
+    color: #FCA7BC;
+}
+.panel p{
+    font-size: 14px;
+    font-weight: 400;
+    color: cadetblue;
+    line-height: 31.5px;
+    margin:30px 0;
+}
+.cta{
+    width: 30%;
+    padding:15px;
+    background: white;
+    color: darkcyan;
+    outline: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: inset 3px 2px 2px whitesmoke,
+                inset -1px -1px 2px black;
+    border-radius: 5%;
+    letter-spacing: 1px;
+}
+
+.cta a{
+    text-decoration: none;
+}
+.cta a:hover{
+    color: darkturquoise;
+}
